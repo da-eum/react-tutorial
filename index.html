@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Hello React!</title>
+        
+        <!-- React : React 최상위 API -->
+        <script src="https://unpkg.com/react@^16/umd/react.production.min.js"></script>
+        
+        <!-- React DOM : DOM 전용 메소드 추가 -->
+        <script src="https://unpkg.com/react-dom@16.13.0/umd/react-dom.production.min.js"></script>
+
+        <!-- Babel : 오래된 브라우저에서 ES6+를 사용할 수 있게 해주는 JavaScript 컴파일러 -->
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    </head>
+    <body>
+        <!-- 앱의 진입점 : root 규치겡 따라 명명된 div 요소 -->
+        <div id="root"></div>
+
+        <!-- React code will go here  -->
+        <script type="text/babel">
+            class App extends React.Component {
+                render() {
+                    return <h1>Hello World!</h1>
+                }
+            }
+
+            ReactDOM.render(<App/>, document.getElementById('root'));
+        </script>
+    </body>
+</html>
